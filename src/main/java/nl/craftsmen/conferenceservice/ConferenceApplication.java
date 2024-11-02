@@ -8,16 +8,16 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.List;
 
 @SpringBootApplication
-public class ConferenceserviceApplication {
+public class ConferenceApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(ConferenceserviceApplication.class, args);
+		SpringApplication.run(ConferenceApplication.class, args);
 	}
 
 }
 
 @RestController
-class ConferenController {
+class ConferenceController {
 
 	@GetMapping("/conferences")
 	public List<String> getConferences() throws InterruptedException {
